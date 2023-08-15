@@ -1,18 +1,18 @@
 # Цикл while проверяет истинность некоторого условия, и если условие истинно, то выполняет инструкции цикла.
-
-# Example 1
-i = 1
-n = 5
-# while loop from i = 1 to 5
-while i <= n:
-    print(i)
-    i = i + 1
-
-# Example 2
-i = 5
-while i < 15:
-    print(i)
-    i = i + 2
+#
+# # Example 1
+# i = 1
+# n = 5
+# # while loop from i = 1 to 5
+# while i <= n:
+#     print(i)
+#     i = i + 1
+#
+# # Example 2
+# i = 5
+# while i < 15:
+#     print(i)
+#     i = i + 2
 
 # Example 3
 number = 1
@@ -22,12 +22,12 @@ while number < 5:
 print('The program is complete')
 
 # Example 4 used else
-number1 = 1
+number1 = 6
 while number1 > 5:
      print(f'number = {number1}')
-     number1 += 1
+     number1 -= 1
 else:
-    number1 += 1
+    number1 += 2
     print(f'number = {number1}')
 print("The program is complete")
 
