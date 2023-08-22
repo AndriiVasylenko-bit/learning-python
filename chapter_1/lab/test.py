@@ -1,5 +1,7 @@
-big = max('Hello world')
-print(big)
+# Multiple Parameters/Arguments
+def addtwo(a, b):
+    added = a + b
+    return added
 
-tiny = min('Hello world') #маленький
-print(tiny)
+x = addtwo(3, 5)
+print(x)
