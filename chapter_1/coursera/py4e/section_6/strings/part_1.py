@@ -34,3 +34,38 @@ x = 3
 w = fruit[x - 1]
 print(w)
 
+
+
+# A character Too Far/Персонаж слишком далеко
+zor = 'abc'
+try: print(zor[5])
+except: print('IndexError: string index out of range/IndexError: строковый индекс вне диапазона')
+
+
+
+# Strings Have Length
+fruit = 'banana'
+print(len(fruit))
+
+
+
+# Looping Through Strings.
+fruit = 'banana'
+index = 0
+while index < len(fruit):
+    letter = fruit[index]
+    print(index, letter)
+    index = index + 1
+
+fruit = 'banana'
+for letter in fruit:
+    print(letter)
+
+
+# Looping and Counting/Лупинг и подсчет
+word = 'banana'
+count = 0
+for letter in word :
+    if letter == 'a' :
+        count = count + 1
+    print(count)
