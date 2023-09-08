@@ -77,3 +77,58 @@ for friend in friends :
 for i in range(len(friends)) :
     friend = friends[i]
     print('Happy New Year:', friend)
+
+
+
+# List Methods
+x = list()
+print(type(x))
+print(dir(x))
+
+
+
+# Building a List from Scratch
+stuff = list()
+stuff.append('book')
+stuff.append(99)
+print(stuff)
+stuff.append('cookie')
+print(stuff)
+
+
+
+# Is Something in a List?
+some = [1, 9, 21, 10, 16]
+print(9 in some)
+print(15 in some)
+print(20 not in some)
+
+
+
+# Lists are in Order
+friends = ['Josep', 'Glenn', 'Sally']
+friends.sort()
+print(friends)
+print(friends[1])
+
+
+
+# Built-in Functions and List
+nums = [3, 41, 12, 9, 74, 15]
+print(len(nums))
+print(max(nums))
+print(min(nums))
+print(sum(nums))
+print(sum(nums)/len(nums))
+
+
+# Right
+numlist = list()
+while True :
+    inp = input('Enter a number: ')
+    if inp == 'done' : break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist) / len(numlist)
+print('Avarage: ', average)
