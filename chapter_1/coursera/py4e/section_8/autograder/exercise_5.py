@@ -11,13 +11,16 @@ if len(fname) < 1:
 
 lst = list()
 fh = open(fname)
-count = 0
 for line in fh:
     if 'From' in line:
+        sline = line.rstrip().split()
+        print(sline)
         ipos = line.rstrip().find(' ')
         line = line[ipos+1:]
         ipos = line.find(' ')
         line = line[:ipos]
-        print(line)
+        if line not in lst:
+            lst.append(line)
 
-print("There were", count, "lines in the file with From as the first word")
+
+print("There were", len(lst), "lines in the file with From as the first word")
