@@ -2,24 +2,14 @@
 
 abc = 'With three words'
 stuff = abc.split()
-print(stuff)
-print(len(stuff))
-print(stuff[0])
+print(f"{stuff}\n{len(stuff)}\n{stuff[0]}\n{stuff}")
 
-print(stuff)
-for w in stuff :
-    print(w)
+for w in stuff: print(w)
 
 line = 'A lot                        of spaces'
-etc = line.split()
-print(etc)
+print(line.split())
 
 line = 'first;second;third'
-thing = line.split()
-print(thing)
-print(len(thing))
+print(f"{line.split()}\n{len(line.split())}")
 
-thing = line.split(';')
-print(thing)
-print(len(thing))
-
+print(f"{line.split(';')}\n{len(line.split(';'))}")
