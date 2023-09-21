@@ -28,19 +28,36 @@ print(f"{list(jjj)}\n{jjj.keys()}\n{jjj.items()}")
 
 
 # Bonus: Two Iteration Variables!
+jjj = { 'chuck': 1, 'fred': 42, 'jan': 100}
+for aaa,bbb in jjj.items():
+    print(aaa, bbb)
 
 
+handle = open('mbox.txt')
 
+counts = dict()
+for line in handle:
+    words = line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0)
+
+bigcount = None
+bigword = None
+for word,count in counts.items():
+    if bigword is None or count > bigcount:
+        bigword = word
+        bigcount = count
+
+print(bigword, bigcount)
 
 
 
 # Counting words
-dic = dict()
-hand = open('mbox.txt')
+handle = open('mbox.txt')
+
 kay = None
-max_kay = None
-max_value = None
-for line in hand:
+dic = dict()
+for line in handle:
     line = line.rstrip().split()
     for word in line:
         i = line.index(word)
@@ -48,9 +65,12 @@ for line in hand:
         kay = word.strip('()".,')
         dic[kay] = dic.get(kay, 0) + 1
 
-for kay in dic:
-    max_value = max(dic.values())
-    if max_value == dic[kay]:
-        max_kay = kay
+max_kay = None
+max_value = None
+
+for k, v in dic.items():
+    if max_kay is None or v > max_value:
+        max_kay = k
+        max_value = v
 
 print(f'{max_kay}: {max_value}')
