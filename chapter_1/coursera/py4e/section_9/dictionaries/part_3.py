@@ -33,6 +33,8 @@ for aaa,bbb in jjj.items():
     print(aaa, bbb)
 
 
+
+# Counting words
 handle = open('mbox.txt')
 
 counts = dict()
@@ -52,7 +54,7 @@ print(bigword, bigcount)
 
 
 
-# Counting words
+# Right counting words
 handle = open('mbox.txt')
 
 kay = None
