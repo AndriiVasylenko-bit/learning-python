@@ -58,3 +58,11 @@ for (k,v) in d.items():
 
 tups = d.items()
 print(tups)
+
+
+
+# Tuples are Comparable
+print(f"{(0, 1, 2) < (5, 1, 2)}\n"
+      f"{(0, 1, 2000000) < (0, 3, 4)}"
+      f"{('Josep', 'Sally') < ('Josep', 'Sam')}\n"
+      f"{('Josep', 'Sally') > ('Adams', 'Sam')}")
