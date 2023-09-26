@@ -23,22 +23,31 @@ print(tmp)
 tmp = sorted(tmp, reverse=True)
 print(tmp)
 
-# Te top 10 most common words
 
+
+# The top 10 most common words
 fhand = open('romeo.txt')
 counts = dict()
 for line in fhand:
     words = line.split()
     for word in words:
-        word = word.strip('"():.,—')
+        word = word.strip('"():.,—вЂњ”')
         counts[word] = counts.get(word, 0) + 1
 
-lst = list()
-for (kay, val) in counts.items():
-    newtup = (val, kay)
-    lst.append(newtup)
+lst = sorted([(v, k) for (k, v) in counts.items()], reverse=True) # generator
 
-lst = sorted(lst, reverse=True)
-
+# lst = list()
+# for (kay, val) in counts.items():
+#     newtup = (val, kay)
+#     lst.append(newtup)
+#
+# lst = sorted(lst, reverse=True)
+#
 for (val, key) in lst[:10]:
     print(key, val)
+
+
+
+# Even Shorter Version
+c = {'a':10, 'b':1, 'c':22}
+print(sorted([(v, k) for (k, v) in c.items()]))
