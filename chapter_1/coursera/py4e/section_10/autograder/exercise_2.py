@@ -7,8 +7,13 @@ if len(name) < 1:
     name = "mbox-short.txt"
 handle = open(name)
 
+dic = dict()
 for line in handle:
     if "From" in line and "From:" not in line:
         line = line.split()
-        line = line[5]
-        print(line[:line.find(":")])
+        word = line[5][:line[5].find(":")]
+        dic[word] = dic.get(word, 0) + 1
+
+lst = sorted([(k, v) for (k, v) in dic.items()])
+for (k, v) in lst: print(k, v)
+

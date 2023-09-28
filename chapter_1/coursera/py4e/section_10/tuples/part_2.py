@@ -34,7 +34,7 @@ for line in fhand:
         word = word.strip('"():.,—вЂњ”')
         counts[word] = counts.get(word, 0) + 1
 
-lst = sorted([(v, k) for (k, v) in counts.items()], reverse=True) # generator
+lst = sorted([(v, k) for (k, v) in counts.items()], reverse=True)
 
 # lst = list()
 # for (kay, val) in counts.items():
@@ -50,4 +50,4 @@ for (val, key) in lst[:10]:
 
 # Even Shorter Version
 c = {'a':10, 'b':1, 'c':22}
-print(sorted([(v, k) for (k, v) in c.items()]))
+print(sorted([(v, k) for (k, v) in c.items()])) # generator
