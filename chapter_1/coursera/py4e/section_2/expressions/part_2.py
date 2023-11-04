@@ -19,7 +19,7 @@ print(c)
 # region Mnemonic.
 hours = 35.0
 rate = 12
-pay = hour * rate
+pay = hours * rate
 print(pay)
 # endregion
 

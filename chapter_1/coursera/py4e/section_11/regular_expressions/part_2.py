@@ -18,3 +18,16 @@ print(y)
 y = re.findall('^F.+?:', x)
 print(y)
 # .+? One or more characters but not greedy
+
+
+
+x = "From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008"
+y = re.findall('\S+@\S+', x)
+# \S+@\S+ At least one non-whitespace character (По крайней мере один символ неблокового пространства)
+print(y)
+
+
+
+# Parentheses are not part of the match - but they tell where to start and stop what string to extract
+y = re.findall('^From (\S+@\S+)', x)
+print(y)
