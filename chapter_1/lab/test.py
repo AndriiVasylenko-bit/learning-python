@@ -1,13 +1,17 @@
-from translate import Translator
+import re
 
-def translate_russian_to_ukrainian(word):
-    translator = Translator(to_lang="uk")
-    translation = translator.translate(word)
-    return translation
+line = """"Ветаптека Липова Долина • Ветаптека У Липовій Долині • Ветаптеки Липова
+        Долина • Ветаптеки У Липовій Долині • Ветеринарні Ліки • Вітаміни Для
+        Тварин • Зоомедикація • Ветеринарні Препарати • Лікування Тварин •
+        Допомога Ветеринара • Ветеринарні Консультації • Аптека Для Тварин •
+        Профілактика Захворювань У Тварин • Ветеринарні Рекомендації • Ветаптека
+        В Липовій Долині • Зоотовари Для Тварин • Товари Для Ветмедицини •
+        Ветеринарна Аптека • Ветеринарні Клініки • Ветеринар • Ветеринарна
+        Клініка • Ветеринарний Кабінет • Ветеринарні Кабінети • Ветеринарія •
+        Ветеринарні Послуги • Все Для Тварин • Все Для Бджільництва •
+        Акваріумістика • Ветпрепарати.
+"""
+# Используйте регулярное выражение для удаления \n после точек
+line = re.sub(r' •', r',', line)
 
-# Example usage
-russian_word = "Привет"  # Replace with the word you want to translate
-ukrainian_translation = translate_russian_to_ukrainian(russian_word)
-
-print(f"Russian: {russian_word}")
-print(f"Ukrainian: {ukrainian_translation}")
+print(line)
