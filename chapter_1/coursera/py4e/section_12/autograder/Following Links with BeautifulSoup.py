@@ -5,28 +5,33 @@
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 import ssl
+import re
 
 # Ignore SSL certificate errors
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-links =  list()
-def open(url):
+links = list()
+def parser(url):
     html = urllib.request.urlopen(url, context=ctx).read()
     soup = BeautifulSoup(html, 'html.parser')
 
+    links.clear()
     # Retrieve all of the anchor tags
     tags = soup('a')
     for tag in tags:
         links.append(tag.get('href', None))
 
-    for link in links:
-        print(link)
+def search(url, position, repeat):
+    position -= 1
+    repeat -= 1
+    parser(url)
+    for i in range(repeat):
+        parser(links[position])
+        match = re.search(r'known_by_(\w+)', links[position])
+        if match: print(match.group(1))
+        else: print("No match found")
 
-open('http://py4e-data.dr-chuck.net/known_by_Fikret.html')
-print('\n')
-print('\n', links[2])
 
-open(links[2])
-print('\n', links[2])
+search('http://py4e-data.dr-chuck.net/known_by_Daniyal.html', 18, 7)
