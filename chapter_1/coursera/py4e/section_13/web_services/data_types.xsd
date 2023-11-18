@@ -1,0 +1,9 @@
+<xs:complexType name="data_types" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:sequence>
+        <xs:element name="customer" type="xs:string"/>
+        <xs:element name="start" type="xs:date"/>
+        <xs:element name="startdate" type="xs:dateTime"/>
+        <xs:element name="prize" type="xs:decimal"/>
+        <xs:element name="weeks" type="xs:integer"/>
+    </xs:sequence>
+</xs:complexType>
