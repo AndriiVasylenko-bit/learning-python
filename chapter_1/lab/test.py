@@ -1,22 +1,12 @@
-import requests
-from bs4 import BeautifulSoup
+# For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 
-url = "https://trends.rbc.ru/trends/industry/5e845cec9a794747bf03e2c9"
+def count_positives_sum_negatives(arr):
+    if arr is not None:
+        lst = list()
+        b = True
+        for i in range(len(arr)):
+            if arr[i] < 0 and b:
+                lst.append(i-1)
+                b = False
 
-# Send a GET request to the URL
-response = requests.get(url)
 
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    # Parse the HTML content of the page
-    soup = BeautifulSoup(response.text, 'html.parser')
-
-    # Find the element with class "article__text__main"
-    article_text_main = soup.find('div', class_='article__text__main')
-
-    # Extract and print the text within the <p> tags
-    paragraphs = article_text_main.find_all('p')
-    for paragraph in paragraphs:
-        print(paragraph.get_text().strip())
-else:
-    print(f"Error: Unable to retrieve the content. Status Code: {response.status_code}")
