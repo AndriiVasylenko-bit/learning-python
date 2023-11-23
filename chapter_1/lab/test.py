@@ -1,12 +1,27 @@
-# For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+print('A B F')
+for a in range(2):
+    for b in range(2):
+        f = not (a and b) or not (b and a)
+        f = int(f)
+        print(a, b, f)
 
-def count_positives_sum_negatives(arr):
-    if arr is not None:
-        lst = list()
-        b = True
-        for i in range(len(arr)):
-            if arr[i] < 0 and b:
-                lst.append(i-1)
-                b = False
+print('A B F')
+for a in range(2):
+    for b in range(2):
+        f = not (a == b) or not (a) or (a or b)
+        f = int(f)
+        print(a, b, f)
 
+print('Q P F')
+for q in range(2):
+    for p in range(2):
+        f = q or p or (q)
+        f = int(f)
+        print(q, p, f)
 
+print('X Y F')
+for x in range(2):
+    for y in range(2):
+        f = not (x) or (y and x)
+        f = int(f)
+        print(x, y, f)
