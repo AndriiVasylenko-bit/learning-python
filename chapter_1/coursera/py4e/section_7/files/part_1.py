@@ -1,5 +1,7 @@
-fhand = open('mbox.txt')
-print(fhand)
+xfile = open('mbox.txt')
+for cheese in xfile:
+    cheese = cheese.rstrip()
+    print(cheese)
 
 # The newline Character
 stuff = 'Hello\nWorld!' # 'Hello\nWorld!'
