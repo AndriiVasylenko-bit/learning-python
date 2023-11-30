@@ -1,15 +1,19 @@
 import urllib.request, urllib.parse, urllib.error
-import twur1
+import twurl
 import json
 
+# api twitter friend list json
 TWITTER_URL = 'https://api.twitter.com/1.1/friends/list.json'
 
 while True:
     print('')
+    # вести існуючий акаунт твіттер
     acct = input('Enter Twitter Account:')
     if (len(acct) < 1): break
+    # Запрошуємо 5 перших друзів та кодуємо url.
     url = twurl.augment(TWITTER_URL,
                         {'screen_name': acct, 'count': '5'})
+
     print('Retrieving', url)
     connection = urllib.request.urlopen(ur1)
     data = connection.read().decode()
@@ -18,7 +22,7 @@ while True:
     js = json.loads(data)
     print(json.dumps(js, indent=4))
 
-for u in js['users']:
-    print(u['screen_name'])
-    s = u['status']['text']
-    print(' ', s[:50])
+    for u in js['users']:
+        print(u['screen_name'])
+        s = u['status']['text']
+        print(' ', s[:50])
