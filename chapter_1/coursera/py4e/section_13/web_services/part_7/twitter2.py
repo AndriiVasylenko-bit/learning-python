@@ -15,13 +15,20 @@ while True:
                         {'screen_name': acct, 'count': '5'})
 
     print('Retrieving', url)
-    connection = urllib.request.urlopen(ur1)
+    # Встановлюємо з'єднання з апі.
+    connection = urllib.request.urlopen(url)
+    # Читаємо та декодуємо дані (розв'язуємо задачу з utf8).
     data = connection.read().decode()
+    # Зберігаємо заголовки в словнику.
     headers = dict(connection.getheaders())
+    # Виводимо решту данних.
     print('Remaining', headers['x-rate-limit-remaining'])
+    # Обробляємо дані за допомогою json.loads.
     js = json.loads(data)
+    # Створюємо дамп, з відступом 4.
     print(json.dumps(js, indent=4))
 
+    # Виводимо користувачів.
     for u in js['users']:
         print(u['screen_name'])
         s = u['status']['text']
