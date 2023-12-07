@@ -1,35 +1,38 @@
 import urllib.request, urllib.parse, urllib.error
 import twurl
 import json
+import ssl
 
-# api twitter friend list json
+# https://apps.twitter.com/
+# Create App and get the four strings, put them in hidden.py
+
 TWITTER_URL = 'https://api.twitter.com/1.1/friends/list.json'
+
+# Ignore SSL certificate errors
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
 while True:
     print('')
-    # вести існуючий акаунт твіттер
     acct = input('Enter Twitter Account:')
     if (len(acct) < 1): break
-    # Запрошуємо 5 перших друзів та кодуємо url.
     url = twurl.augment(TWITTER_URL,
                         {'screen_name': acct, 'count': '5'})
-
     print('Retrieving', url)
-    # Встановлюємо з'єднання з апі.
-    connection = urllib.request.urlopen(url)
-    # Читаємо та декодуємо дані (розв'язуємо задачу з utf8).
+    connection = urllib.request.urlopen(url, context=ctx)
     data = connection.read().decode()
-    # Зберігаємо заголовки в словнику.
-    headers = dict(connection.getheaders())
-    # Виводимо решту данних.
-    print('Remaining', headers['x-rate-limit-remaining'])
-    # Обробляємо дані за допомогою json.loads.
-    js = json.loads(data)
-    # Створюємо дамп, з відступом 4.
-    print(json.dumps(js, indent=4))
 
-    # Виводимо користувачів.
+    js = json.loads(data)
+    print(json.dumps(js, indent=2))
+
+    headers = dict(connection.getheaders())
+    print('Remaining', headers['x-rate-limit-remaining'])
+
     for u in js['users']:
         print(u['screen_name'])
+        if 'status' not in u:
+            print('   * No status found')
+            continue
         s = u['status']['text']
-        print(' ', s[:50])
+        print('  ', s[:50])
