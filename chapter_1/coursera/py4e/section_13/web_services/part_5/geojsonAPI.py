@@ -1,9 +1,17 @@
 import urllib.request, urllib.parse, urllib.error
 import json
 
+with open('api.json', 'r') as file:
+    lines = file.readlines()
+
+data = ''
+for line in lines:
+    data += line.strip()
+
+js = json.loads(data)
+
 # Ваш ключ geocoding api google.
-api_key = ''
-serviceurl = f'https://maps.googleapis.com/maps/api/geocode/json?key={api_key}&'
+serviceurl = f'https://maps.googleapis.com/maps/api/geocode/json?key={js["api_kay"]}&'
 
 while True:
     # Адреса міста.
