@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c0a4a37-81a5-46bc-8a43-8d98b6870964" name="Changes" comment="coursera\py4e\section_13\web_services\part_7\twittezr2.py">
+      <change beforePath="$PROJECT_DIR$/.idea/learning-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/activate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/activate.nu" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/activate.nu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/activate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/activate_this.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/activate_this.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/deactivate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/deactivate.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/deactivate.nu" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/deactivate.nu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/pip-3.11.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/pip-3.11.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/pip.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/pip3.11.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/pip3.11.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/pip3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/pydoc.bat" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/pydoc.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/python.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/pythonw.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/wheel-3.11.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/wheel-3.11.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/wheel.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/wheel.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/wheel3.11.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/wheel3.11.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/Scripts/wheel3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/Scripts/wheel3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_1/autograder/write.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_1/book/introduction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_10/autograder/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_10/autograder/mbox-short.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_10/tuples/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_10/tuples/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_10/tuples/romeo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/autograder/regex_sum_1848638.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/autograder/regex_sum_42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/autograder/regular expressions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/regular_expressions/mbox-short.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/regular_expressions/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/regular_expressions/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/regular_expressions/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/Network Programming/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/Network Programming/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/Network Programming/part_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/Network Programming/part_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/Network Programming/part_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/autograder/Following Links with BeautifulSoup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/autograder/Request-Response Cycle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_12/autograder/Scraping HTML Data with BeautifulSoup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/autograder/extracting_data_from_xml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/Shiporder.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_1/structure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_1/structure.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_2/constraints.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_2/constraints.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_3/data_types.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_3/data_types.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_4/SimpleAddress.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/ex_4/SimpleAddress.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/xml1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_3/xml2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_4/json1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_4/json2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_5/GeoJSON.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_5/geojson.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_5/geojsonAPI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_7/hidden.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_7/twitter2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_13/web_services/part_7/twurl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_2/autograder/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_2/autograder/exercise_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_2/expressions/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_2/expressions/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_2/expressions/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_3/autograder/exercise_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_3/autograder/exercise_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_3/conditional_statements/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_3/conditional_statements/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_4/autograder/exercise_6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_4/using_functions/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_4/using_functions/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_5/autograder/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_5/loops_and_Iteration/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_5/loops_and_Iteration/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_5/loops_and_Iteration/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_5/loops_and_Iteration/part_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_6/autograder/exercise_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_6/strings/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_6/strings/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_7/autograder/exercise_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_7/autograder/mbox-short.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_7/files/mbox.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_7/files/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_7/files/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/autograder/exercise_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/autograder/exercise_5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/autograder/mbox-short.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/autograder/romeo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/lists/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/lists/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_8/lists/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/autograder/exercise_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/autograder/mbox-short.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/dictionaries/mbox.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/dictionaries/part_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/dictionaries/part_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/dictionaries/part_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/Iterative_methods/simple_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/api/tweets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/cycles/codewars.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/cycles/for.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/cycles/while.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/discret_math/table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/list/list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/matplotlib/graphic.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/parser/my.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/parser/my_modified.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/parser/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/regular_expressions/delete_blank_lines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/regular_expressions/my.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/regular_expressions/my_modified.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/regular_expressions/replace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/translator/defolt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/translator/done.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/translator/messages.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/translator/tg_translate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/lab/variable/variable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chapter_1/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/python_for_everybody/pyvenv.cfg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0646ad22-28c3-424b-8fdd-a49bc67baa92" />
+        <option name="url" value="https://github.com/AndriiVasylenko-bit/learning-python.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/chapter_1/coursera/py4e/section_11/regular_expressions/mbox-short.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chapter_1/coursera/py4e/section_5/loops_and_Iteration/part_1.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/chapter_1/coursera/py4e/section_9/dictionaries/part_2.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chapter_1/lab/cycles/while.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chapter_1/lab/regular_expressions/delete_blank_lines.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chapter_1/lab/test.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/chapter_1/lab/variable/variable.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2SF2Ux0Rwqy3YudbCD1aS7oWlw5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.extracting_data_from_xml.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geojson.executor&quot;: &quot;Run&quot;,
+    &quot;Python.geojsonAPI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hidden.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parse.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tweets.executor&quot;: &quot;Run&quot;,
+    &quot;Python.twitter2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.twurl.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Git/AndriiVasylenko-bit/learning-python/chapter_1/coursera/py4e/section_11/regular_expressions&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
+  }
+}</component>
+  <component name="Push.Settings">
+    <option name="SHOW_DETAILS_PANEL" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\coursera\py4e\section_11\regular_expressions" />
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\coursera\py4e\section_10\autograder" />
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\coursera\py4e\section_9\autograder" />
+      <recent name="D:\Projects\Git\learning-python\chapter_1\coursera\py4e\section_2\autograder" />
+      <recent name="D:\Projects\Git\learning-python\chapter_1\coursera\chapter_2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\python_for_everybody" />
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\coursera\py4e\section_13\autograder" />
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\coursera\py4e\section_13" />
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\lab\api" />
+      <recent name="D:\Projects\Git\AndriiVasylenko-bit\learning-python\chapter_1\coursera\py4e\section_13\web_services\part_7" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="cls" />
+      <command value="conda list" />
+    </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-67fca87a943a-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.259" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c0a4a37-81a5-46bc-8a43-8d98b6870964" name="Changes" comment="" />
+      <created>1688728028790</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688728028790</updated>
+    </task>
+    <task id="LOCAL-00002" summary="coursera\py4e\section_13\web_services\part_7\twitter2.py">
+      <option name="closed" value="true" />
+      <created>1701892023893</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701892023893</updated>
+    </task>
+    <task id="LOCAL-00003" summary="coursera\py4e\section_13\web_services\part_7\twitter2.py">
+      <option name="closed" value="true" />
+      <created>1701937900306</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701937900306</updated>
+    </task>
+    <task id="LOCAL-00004" summary="coursera\py4e\section_13\web_services\part_7\twittezr2.py">
+      <option name="closed" value="true" />
+      <created>1701941225704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941225704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chapter_1/lab/Matplotlib/" />
+    <MESSAGE value="coursera\py4e\section_13\web_services\part_7\twitter2.py" />
+    <MESSAGE value="coursera\py4e\section_13\web_services\part_7\twittezr2.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="coursera\py4e\section_13\web_services\part_7\twittezr2.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Charles_Severance/Lab/test.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../python-for-everybody/section_8/lists/part_1.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../python-for-everybody/section_8/lists/part_1.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../python-for-everybody/section_8/lists/part_1.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../python-for-everybody/section_13/autograder/extracting_data_from_xml.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
