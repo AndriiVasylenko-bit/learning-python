@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+# created by virtualenv automatically
+../AndriiVasylenko-bit/learning-python/python_for_everybody/Lib
+
+>>>>>>> master
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
