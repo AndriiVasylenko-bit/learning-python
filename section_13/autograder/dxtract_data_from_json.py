@@ -1,21 +1,19 @@
+import urllib.request, urllib.parse, urllib.error
 import json
+import ssl
 
-data = '''
-[
-  { "id" : "001",
-    "x" : "2",
-    "name" : "Chuck"
-  } ,
-  { "id" : "009",
-    "x" : "7",
-    "name" : "Brent"
-  }
-]'''
+url = "http://py4e-data.dr-chuck.net/comments_1848643.json"
 
-info = json.loads(data)
-print('User count:', len(info))
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
 
-for item in info:
-    print('Name', item['name'])
-    print('Id', item['id'])
-    print('Attribute', item['x'])
+data = urllib.request.urlopen(url, context=ctx).read()
+
+line = json.loads(data)
+line = line['comments']
+count = 0
+
+for item in line:
+    count += item['count']
+print('Sum: ', count)
