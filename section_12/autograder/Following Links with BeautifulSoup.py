@@ -15,7 +15,7 @@ ctx.verify_mode = ssl.CERT_NONE
 links = list()
 def parser(url):
     html = urllib.request.urlopen(url, context=ctx).read()
-    soup = BeautifulSoup(html, 'html.parser')
+    soup = BeautifulSoup(html, 'html.parser_1')
 
     links.clear()
     # Retrieve all of the anchor tags

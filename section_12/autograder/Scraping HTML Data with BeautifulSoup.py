@@ -2,7 +2,7 @@ import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 
 html = urllib.request.urlopen('http://py4e-data.dr-chuck.net/comments_1848640.html')
-soup = BeautifulSoup(html, 'html.parser')
+soup = BeautifulSoup(html, 'html.parser_1')
 
 amount = 0
 # Retrieve all of the anchor tags

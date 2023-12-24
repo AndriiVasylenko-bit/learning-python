@@ -9,7 +9,7 @@ response = requests.get(url)
 # Check if the request was successful (status code 200)
 if response.status_code == 200:
     # Parse the HTML content of the page
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, 'html.parser_1')
 
     # Find the element with class "article__text__main"
     article_text_main = soup.find('div', class_='article__text__main')
