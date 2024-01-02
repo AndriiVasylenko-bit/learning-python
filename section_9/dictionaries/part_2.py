@@ -35,6 +35,7 @@ if name in counts:
     x = counts[name]
 else:
     x = 0
+print(x)
 
 x = counts.get(name, 0)
 print(x)

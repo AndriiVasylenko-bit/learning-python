@@ -1,4 +1,4 @@
-import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.error
 import twurl
 import json
 import sqlite3
@@ -46,7 +46,7 @@ while True:
             id = cur.lastrowid
 
     url = twurl.augment(TWITTER_URL,
-        {'screen_name': acct, 'count': '100'})
+                        {'screen_name': acct, 'count': '100'})
     print('Retrieving account', acct)
     try:
         connection = urllib.request.urlopen(url, context=ctx)
