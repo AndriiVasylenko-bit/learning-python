@@ -14,7 +14,7 @@
 # bigcount = None
 # bigword = None
 # for word,counts in counts.items():
-#         if bigcount is None or count > bigcount:
+#         if bigcount is None or album_count > bigcount:
 #             bigword = word
 #             bigcount = counts
 #

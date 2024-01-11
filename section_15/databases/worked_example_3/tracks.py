@@ -23,7 +23,7 @@ CREATE TABLE "Track" (
         AUTOINCREMENT UNIQUE,
     title TEXT UNIQUE,
     album_id INTEGER,
-    len INTEGER, rating INTEGER, count INTEGER);
+    len INTEGER, album_rating INTEGER, album_count INTEGER);
 ''')
 
 fname = input('Enter file name: ')
@@ -46,7 +46,7 @@ def lookup(element, key):
 
 stuff = ET.parse(fname)
 all = stuff.findall('dict/dict/dict')  # List all element 'dict'.
-print('Dict count: ', len(all))
+print('Dict album_count: ', len(all))
 for element in all:
     if (lookup(element, 'Track ID') is None): continue  # Root validation.
 
@@ -76,7 +76,7 @@ for element in all:
 
     # Work only SQLLight
     cur.execute('''INSERT OR REPLACE INTO Track
-        (title, album_id, len, rating, count)
+        (title, album_id, len, album_rating, album_count)
         VALUES (?, ?, ?, ?, ?)''',
                 (name, album_id, length, rating, count))
 

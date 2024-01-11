@@ -7,7 +7,7 @@ class PartyAnimal:
 
     def party(self):
         self.x += 1
-        print(self.name, "party count", self.x)
+        print(self.name, "party album_count", self.x)
 
 
 class FootballFan(PartyAnimal):

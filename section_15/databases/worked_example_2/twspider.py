@@ -32,7 +32,7 @@ while True:
         except:
             print('No unretrieved Twitter accounts found')
             continue
-    url = twurl.augment(TWITTER_URL, {'screen_name': acct, 'count': '5'})
+    url = twurl.augment(TWITTER_URL, {'screen_name': acct, 'album_count': '5'})
     print('Retrieving', url)
     connection = urlopen(url, context=ctx)
     # Отримати формат файлу в utf-8 также после в unicode

@@ -36,7 +36,7 @@ try:
     tweets = api.search_tweets(q=search_query, lang="en", count=no_of_tweets, tweet_mode='extended')
 
     # Pulling Some attributes from the tweet
-    attributes_container = [[tweet.user.name, tweet.created_at, tweet.favorite_count, tweet.source, tweet.full_text] for
+    attributes_container = [[tweet.user.track_name, tweet.created_at, tweet.favorite_count, tweet.source, tweet.full_text] for
                             tweet in tweets]
 
     # Creation of column list to rename the columns in the dataframe

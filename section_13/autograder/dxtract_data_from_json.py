@@ -15,5 +15,5 @@ line = line['comments']
 count = 0
 
 for item in line:
-    count += item['count']
+    count += item['album_count']
 print('Sum: ', count)

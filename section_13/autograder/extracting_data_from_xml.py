@@ -16,6 +16,6 @@ comments = tree.findall('.//comment')
 
 count = 0
 for comment in comments:
-    count += int(comment.find('count').text)
+    count += int(comment.find('album_count').text)
 print('Sum:', count)
 

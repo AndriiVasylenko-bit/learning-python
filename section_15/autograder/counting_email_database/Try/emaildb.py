@@ -25,11 +25,11 @@ cur = conn.cursor()
 
 cur.execute('DROP TABLE IF EXISTS Counts')
 cur.execute('''
-CREATE TABLE Counts(org TEXT, count INTEGER)''')
+CREATE TABLE Counts(org TEXT, album_count INTEGER)''')
 
 row = cur.fetchone()
 for (v, k) in lst:
-    cur.execute('INSERT INTO Counts (org, count) VALUES (?, ?)',
+    cur.execute('INSERT INTO Counts (org, album_count) VALUES (?, ?)',
                 (k, v,))
     conn.commit()
 cur.close()

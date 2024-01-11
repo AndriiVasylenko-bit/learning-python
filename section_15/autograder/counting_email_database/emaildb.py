@@ -9,7 +9,7 @@ cur = conn.cursor()
 cur.execute('DROP TABLE IF EXISTS Counts')
 
 cur.execute('''
-CREATE TABLE Counts (org TEXT, count INTEGER)''')
+CREATE TABLE Counts (org TEXT, album_count INTEGER)''')
 
 fname = ''
 if not debag: fname = input('Enter file name: ')
@@ -19,18 +19,18 @@ for line in fh:
     if not line.startswith('From: '): continue
     pieces = line.split()
     org = pieces[1]
-    cur.execute('SELECT count FROM Counts WHERE org = ? ', (org,))
+    cur.execute('SELECT album_count FROM Counts WHERE org = ? ', (org,))
     row = cur.fetchone()
     if row is None:
-        cur.execute('''INSERT INTO Counts (org, count)
+        cur.execute('''INSERT INTO Counts (org, album_count)
                 VALUES (?, 1)''', (org,))
     else:
-        cur.execute('UPDATE Counts SET count = count + 1 WHERE org = ?',
+        cur.execute('UPDATE Counts SET album_count = album_count + 1 WHERE org = ?',
                     (org,))
 conn.commit()
 
 # https://www.sqlite.org/lang_select.html
-# sqlstr = 'SELECT org, count FROM Counts ORDER BY count'
+# sqlstr = 'SELECT org, album_count FROM Counts ORDER BY album_count'
 #
 # dic = dict()
 # for row in cur.execute(sqlstr):
@@ -41,8 +41,8 @@ conn.commit()
 # lst = sorted([(v, k) for (k, v) in dic.items()])
 # for (k, v) in lst: print(k, v)
 
-# print('Sum org: ', sum(count))
-# print('Max org: ', max(count))
+# print('Sum org: ', sum(album_count))
+# print('Max org: ', max(album_count))
 
 
 cur.close()

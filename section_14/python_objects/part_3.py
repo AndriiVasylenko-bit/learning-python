@@ -26,7 +26,7 @@ class PartyAnimal:
 
     def party(object):
         object.x = object.x + 1
-        print(object.name, "party count", object.x)
+        print(object.name, "party album_count", object.x)
     def __del__(object):
         print("Del object:", object.name, object.x)
 
