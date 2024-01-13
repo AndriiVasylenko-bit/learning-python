@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="multi_table_sql2">
+<dataSource name="rosterdb">
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.51">
     <root id="1">
       <ServerVersion>3.43.0</ServerVersion>
@@ -446,7 +446,7 @@
     <routine id="176" parent="1" name="fts5"/>
     <schema id="177" parent="1" name="main">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-01-10.07:01:35</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-01-12.15:58:38</LastIntrospectionLocalTimestamp>
     </schema>
     <argument id="178" parent="16">
       <ArgumentDirection>R</ArgumentDirection>
@@ -1468,161 +1468,97 @@
     <argument id="517" parent="176">
       <Position>1</Position>
     </argument>
-    <table id="518" parent="177" name="Album"/>
-    <table id="519" parent="177" name="Artist"/>
-    <table id="520" parent="177" name="Genre"/>
-    <table id="521" parent="177" name="Track"/>
-    <table id="522" parent="177" name="sqlite_master">
+    <table id="518" parent="177" name="Course"/>
+    <table id="519" parent="177" name="Member"/>
+    <table id="520" parent="177" name="User"/>
+    <table id="521" parent="177" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="523" parent="177" name="sqlite_sequence">
-      <System>1</System>
-    </table>
-    <column id="524" parent="518" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="522" parent="518" name="id">
       <DasType>INTEGER|0s</DasType>
-      <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="525" parent="518" name="artist_id">
-      <DasType>INTEGER|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="526" parent="518" name="title">
-      <DasType>TEXT|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <index id="527" parent="518" name="sqlite_autoindex_Album_1">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Unique>1</Unique>
-    </index>
-    <key id="528" parent="518">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>sqlite_autoindex_Album_1</UnderlyingIndexName>
-    </key>
-    <key id="529" parent="518">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_Album_1</UnderlyingIndexName>
-    </key>
-    <column id="530" parent="519" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DasType>INTEGER|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="531" parent="519" name="name">
+    <column id="523" parent="518" name="title">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="532" parent="519" name="sqlite_autoindex_Artist_1">
-      <ColNames>id</ColNames>
+    <index id="524" parent="518" name="sqlite_autoindex_Course_1">
+      <ColNames>title</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="533" parent="519">
+    <key id="525" parent="518">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>sqlite_autoindex_Artist_1</UnderlyingIndexName>
     </key>
-    <key id="534" parent="519">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_Artist_1</UnderlyingIndexName>
+    <key id="526" parent="518">
+      <ColNames>title</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_Course_1</UnderlyingIndexName>
     </key>
-    <column id="535" parent="520" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="527" parent="519" name="user_id">
       <DasType>INTEGER|0s</DasType>
-      <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="536" parent="520" name="name">
-      <DasType>TEXT|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <index id="537" parent="520" name="sqlite_autoindex_Genre_1">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Unique>1</Unique>
-    </index>
-    <key id="538" parent="520">
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>sqlite_autoindex_Genre_1</UnderlyingIndexName>
-    </key>
-    <key id="539" parent="520">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_Genre_1</UnderlyingIndexName>
-    </key>
-    <column id="540" parent="521" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DasType>INTEGER|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="541" parent="521" name="album_id">
+    <column id="528" parent="519" name="course_id">
       <DasType>INTEGER|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="542" parent="521" name="genre_id">
+    <column id="529" parent="519" name="role">
       <DasType>INTEGER|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="543" parent="521" name="len">
-      <DasType>INTEGER|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <column id="544" parent="521" name="rating">
-      <DasType>INTEGER|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <column id="545" parent="521" name="title">
-      <DasType>TEXT|0s</DasType>
-      <Position>6</Position>
-    </column>
-    <column id="546" parent="521" name="count">
-      <DasType>INTEGER|0s</DasType>
-      <Position>7</Position>
-    </column>
-    <index id="547" parent="521" name="sqlite_autoindex_Track_1">
-      <ColNames>id</ColNames>
+    <index id="530" parent="519" name="sqlite_autoindex_Member_1">
+      <ColNames>user_id
+course_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Unique>1</Unique>
     </index>
-    <key id="548" parent="521">
-      <ColNames>id</ColNames>
+    <key id="531" parent="519">
+      <ColNames>user_id
+course_id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>sqlite_autoindex_Track_1</UnderlyingIndexName>
+      <UnderlyingIndexName>sqlite_autoindex_Member_1</UnderlyingIndexName>
     </key>
-    <key id="549" parent="521">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>sqlite_autoindex_Track_1</UnderlyingIndexName>
-    </key>
-    <column id="550" parent="522" name="type">
-      <DasType>TEXT|0s</DasType>
+    <column id="532" parent="520" name="id">
+      <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="551" parent="522" name="name">
+    <column id="533" parent="520" name="name">
       <DasType>TEXT|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="552" parent="522" name="tbl_name">
+    <index id="534" parent="520" name="sqlite_autoindex_User_1">
+      <ColNames>name</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="535" parent="520">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="536" parent="520">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_User_1</UnderlyingIndexName>
+    </key>
+    <column id="537" parent="521" name="type">
+      <DasType>TEXT|0s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="538" parent="521" name="name">
+      <DasType>TEXT|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="539" parent="521" name="tbl_name">
       <DasType>TEXT|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="553" parent="522" name="rootpage">
+    <column id="540" parent="521" name="rootpage">
       <DasType>INT|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="554" parent="522" name="sql">
+    <column id="541" parent="521" name="sql">
       <DasType>TEXT|0s</DasType>
       <Position>5</Position>
-    </column>
-    <column id="555" parent="523" name="name">
-      <Position>1</Position>
-    </column>
-    <column id="556" parent="523" name="seq">
-      <Position>2</Position>
     </column>
   </database-model>
 </dataSource>
