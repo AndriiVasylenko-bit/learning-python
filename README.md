@@ -14,6 +14,6 @@
 * [X]  (section_11) 12: Regular Expressions
 * [X]  (section_12) 13: Network Programming
 * [X]  (section_13) 14: Using Web Services
-* [ ]  (section_14) 15: Object-Oriented Programming
-* [ ]  (section_15) 16: Databases
+* [X]  (section_14) 15: Object-Oriented Programming
+* [X]  (section_15) 16: Databases
 * [ ]  (section_16) 17: Data Visualization
