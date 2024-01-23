@@ -6,7 +6,7 @@ conn = sqlite3.connect('geodata.sqlite')
 cur = conn.cursor()
 
 cur.execute('SELECT * FROM Locations')
-fhand = codecs.open('where.js', 'w', "utf-8")
+fhand = codecs.open('public/where.js', 'w', "utf-8")
 fhand.write("myData = [\n")
 count = 0
 for row in cur:
@@ -37,4 +37,4 @@ fhand.write("\n];\n")
 cur.close()
 fhand.close()
 print(count, "records written to where.js")
-print("Open where.html to view the data in a browser")
+print("Open index.html to view the data in a browser")

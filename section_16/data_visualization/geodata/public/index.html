@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Data Visualization on Google Maps</title>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="where.js"></script>
+
+    <script>
+        function initialize(apiKey) {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 0, lng: 0 },
+                zoom: 2
+            });
+
+            var markers = [];
+            for (var i = 0; i < myData.length; i++) {
+                var location = new google.maps.LatLng(myData[i][0], myData[i][1]);
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: myData[i][2]
+                });
+                markers.push(marker);
+            }
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+
+        fetch('/getApiKey')
+            .then(response => response.json())
+            .then(data => {
+                const apiKey = data.apiKey;
+                const script = document.createElement('script');
+                script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initialize&v=beta`;
+                script.defer = true;
+
+                document.body.appendChild(script);
+            })
+            .catch(error => console.error('Error fetching API key:', error));
+    </script>
+</body>
+</html>
