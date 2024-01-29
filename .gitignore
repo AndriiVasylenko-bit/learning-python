@@ -118,7 +118,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+section_16/data_visualization/geodata/.env
 .venv
 env/
 venv/
