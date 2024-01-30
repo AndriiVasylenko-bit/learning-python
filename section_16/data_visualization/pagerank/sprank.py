@@ -39,6 +39,12 @@ if len(prev_ranks) < 1:
     print("Nothing to page rank.  Check data.")
     quit()
 
+def findnewtot(next_ranks):
+    newtot = 0
+    for (node, next_rank) in list(next_ranks.items()):
+        newtot += next_rank
+    return newtot
+
 # Lets do Page Rank in memory so it is really fast
 for i in range(many):
     # print prev_ranks.items()[:5]
@@ -66,18 +72,14 @@ for i in range(many):
         for id in give_ids:
             next_ranks[id] = next_ranks[id] + amount
 
-    newtot = 0
-    for (node, next_rank) in list(next_ranks.items()):
-        newtot += next_rank
+    newtot = findnewtot(next_ranks)
     evap = (total - newtot) / len(next_ranks)
 
     # print newtot, evap
     for node in next_ranks:
         next_ranks[node] += evap
 
-    newtot = 0
-    for (node, next_rank) in list(next_ranks.items()):
-        newtot += next_rank
+    newtot = findnewtot(next_ranks)
 
     # Compute the per-page average change from old rank to new rank
     # As indication of convergence of the algorithm
@@ -100,3 +102,4 @@ for (id, new_rank) in list(next_ranks.items()):
     cur.execute('''UPDATE Pages SET new_rank=? WHERE id=?''', (new_rank, id))
 conn.commit()
 cur.close()
+#%%
