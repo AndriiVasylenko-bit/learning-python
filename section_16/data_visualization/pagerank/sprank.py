@@ -102,4 +102,3 @@ for (id, new_rank) in list(next_ranks.items()):
     cur.execute('''UPDATE Pages SET new_rank=? WHERE id=?''', (new_rank, id))
 conn.commit()
 cur.close()
-#%%
