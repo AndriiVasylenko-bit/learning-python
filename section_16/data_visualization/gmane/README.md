@@ -1,5 +1,5 @@
-Analyzing an EMAIL Archive from gmane and vizualizing the data
-using the D3 JavaScript library
+# Analyzing an EMAIL Archive from gmane and vizualizing the data
+[![image.png](https://i.postimg.cc/HLsScxDs/image.png)](https://postimg.cc/VJp92zk3)using the D3 JavaScript library
 
 This is a set of tools that allow you to pull down an archive
 of an email repository (formerly called gmane.org) using the
@@ -24,30 +24,39 @@ its data in a database and can be interrupted and re-started
 as often as needed.   It may take many hours to pull all the data
 down.  So you may need to restart several times.
 
-To give you a head-start, I have put up 600MB of pre-spidered Sakai 
-email here:
-
-https://www.py4e.com/data_space/content.sqlite.zip
-
-If you download this, you can "catch up with the latest" by
-running gmane.py.
-
-Navigate to the folder where you extracted the gmane.zip
-
 Note: Windows has difficulty in displaying UTF-8 characters
 in the console so for each console window you open, you may need
 to type the following command before running this code:
 
     chcp 65001
 
+## TODO
+* [X] gmane.py
+* [ ] gmodel.py
+* [ ] gbasic.py
+* [ ] gword.py
+* [ ] gline.htm
+* [ ] gline.py
+* [ ] gline.py
+* [ ] force.js
+* [ ] d3.layout.cloud.js
+* [ ] d3.v2.js
+
+
+
+
 http://stackoverflow.com/questions/388490/unicode-characters-in-windows-command-line-how
 
 Here is a run of gmane.py getting the last five messages of the
 sakai developer list:
 
-Mac: python3 gmane.py 
-Win: gmane.py 
+### 1. Running gmane.py
+```
+python3 gmane.py
+```
 
+Output:
+```
 How many messages:10
 http://mbox.dr-chuck.net/sakai.devel/1/2 2662
     ggolden@umich.edu 2005-12-08T23:34:30-06:00 call for participation: developers documentation
@@ -60,7 +69,7 @@ http://mbox.dr-chuck.net/sakai.devel/4/5 11721
 http://mbox.dr-chuck.net/sakai.devel/5/6 9443
     john@caret.cam.ac.uk 2005-12-09T13:32:29+00:00 re: lms/vle rants/comments
 Does not start with From 
-
+```
 The program scans content.sqlite from 1 up to the first message number not
 already spidered and starts spidering at that message.  It continues spidering
 until it has spidered the desired number of messages or it reaches a page
@@ -93,17 +102,19 @@ Each time gmodel.py runs - it completely wipes out and re-builds index.sqlite, a
 you to adjust its parameters and edit the mapping tables in content.sqlite to tweak the 
 data cleaning process.
 
-Running gmodel.py works as follows:
-
-Mac: python3 gmodel.py
-Win: gmodel.py
-
+### 2. Running gmodel.py works as follows:
+```
+python3 gmodel.py
+```
+Output:
+```
 Loaded allsenders 1588 and mapping 28 dns mapping 1
 1 2005-12-08T23:34:30-06:00 ggolden22@mac.com
 251 2005-12-22T10:03:20-08:00 tpamsler@ucdavis.edu
 501 2006-01-12T11:17:34-05:00 lance@indiana.edu
 751 2006-01-24T11:13:28-08:00 vrajgopalan@ucmerced.edu
 ...
+```
 
 The gmodel.py program does a number of data cleaing steps
 
@@ -112,7 +123,7 @@ other domain names are truncated to three levels.  So si.umich.edu becomes
 umich.edu and caret.cam.ac.uk becomes cam.ac.uk.   Also mail addresses are
 forced to lower case and some of the @gmane.org address like the following
 
-   arwhyte-63aXycvo3TyHXe+LvDLADg@public.gmane.org
+*arwhyte-63aXycvo3TyHXe+LvDLADg@public.gmane.org*
 
 are converted to the real address whenever there is a matching real email
 address elsewhere in the message corpus.
@@ -122,14 +133,14 @@ you to map both domain names and individual email addresses that change over
 the lifetime of the email list.  For example, Steve Githens used the following
 email addresses over the life of the Sakai developer list:
 
-s-githens@northwestern.edu
-sgithens@cam.ac.uk
-swgithen@mtu.edu
+*s-githens@northwestern.edu*
+*sgithens@cam.ac.uk*
+*swgithen@mtu.edu*
 
 We can add two entries to the Mapping table
 
-s-githens@northwestern.edu ->  swgithen@mtu.edu
-sgithens@cam.ac.uk -> swgithen@mtu.edu
+*s-githens@northwestern.edu* -> *swgithen@mtu.edu*
+*sgithens@cam.ac.uk* -> *swgithen@mtu.edu*
 
 And so all the mail messages will be collected under one sender even if 
 they used several email addresses over the lifetime of the mailing list.
@@ -138,7 +149,7 @@ You can also make similar entries in the DNSMapping table if there are multiple
 DNS names you want mapped to a single DNS.  In the Sakai data I add the following
 mapping:
 
-iupui.edu -> indiana.edu
+*iupui.edu* -> *indiana.edu*
 
 So all the folks from the various Indiana University campuses are tracked together
 
@@ -150,9 +161,12 @@ analysis.   With this file, data analysis will be really quick.
 The first, simplest data analysis is to do a "who does the most" and "which 
 organzation does the most"?  This is done using gbasic.py:
 
-Mac: python3 gbasic.py 
-Win: gbasic.py 
-
+### 3. Running gbasic.py
+```
+python3 gbasic.py 
+```
+Output:
+```
 How many to dump? 5
 Loaded messages= 51330 subjects= 25033 senders= 1584
 
@@ -169,34 +183,39 @@ umich.edu 6243
 uct.ac.za 2451
 indiana.edu 2258
 unicon.net 2055
-
+```
 You can look at the data in index.sqlite and if you find a problem, you 
 can update the Mapping table and DNSMapping table in content.sqlite and
 re-run gmodel.py.
 
+### 4. Running gword.py
 There is a simple vizualization of the word frequence in the subject lines
 in the file gword.py:
 
-Mac: python3 gword.py
-Win: gword.py
-
+```
+python3 gword.py
+```
+Output:
+```
 Range of counts: 33229 129
 Output written to gword.js
-
+```
 This produces the file gword.js which you can visualize using the file 
 gword.htm.
 
+### 5. Running gline.py
 A second visualization is in gline.py.  It visualizes email participation by 
 organizations over time.
-
-Mac: python3 gline.py 
-Win: gline.py 
-
+```
+python3 gline.py 
+``` 
+Output:
+```
 Loaded messages= 51330 subjects= 25033 senders= 1584
 Top 10 Oranizations
 ['gmail.com', 'umich.edu', 'uct.ac.za', 'indiana.edu', 'unicon.net', 'tfd.co.uk', 'berkeley.edu', 'longsight.com', 'stanford.edu', 'ox.ac.uk']
 Output written to gline.js
-
+```
 Its output is written to gline.js which is visualized using gline.htm.
 
 Some URLs for visualization ideas:
@@ -217,6 +236,6 @@ http://nltk.org/install.html
 
 As always - comments welcome.
 
--- Dr. Chuck
-Sun Sep 29 00:11:01 EDT 2013
-
+---
+Redacting Andrii   
+Tuesday, March 5 00:11:01 EDT 2024
