@@ -32,7 +32,7 @@ to type the following command before running this code:
 
 ## TODO
 * [X] gmane.py
-* [ ] gmodel.py
+* [X] gmodel.py
 * [ ] gbasic.py
 * [ ] gword.py
 * [ ] gline.htm
