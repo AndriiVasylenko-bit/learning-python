@@ -16,4 +16,4 @@
 * [X]  (section_13) 14: Using Web Services
 * [X]  (section_14) 15: Object-Oriented Programming
 * [X]  (section_15) 16: Databases
-* [ ]  (section_16) 17: Data Visualization
+* [X]  (section_16) 17: Data Visualization
